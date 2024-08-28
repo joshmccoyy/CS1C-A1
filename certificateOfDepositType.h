@@ -6,7 +6,7 @@
 
 using namespace std;
 
-class certificateOfDepositType: public bankAccountType
+class certificateOfDepositType : public bankAccountType
 {
 
 public:

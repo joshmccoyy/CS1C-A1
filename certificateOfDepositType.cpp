@@ -7,8 +7,8 @@
 
 using namespace std;
 
-const double certificateOfDeposit::INTEREST_RATE = 0.05;
-const int certificateOfDeposit::NUMBER_OF_MATURITY_MONTHS = 6;
+const double certificateOfDepositType::INTEREST_RATE = 0.05;
+const int certificateOfDepositType::NUMBER_OF_MATURITY_MONTHS = 6;
 
 certificateOfDepositType::certificateOfDepositType (string n, int acctNumber, double bal)
 							: bankAccountType (n, acctNumber, bal)
@@ -82,7 +82,7 @@ void certificateOfDepositType::createMonthlyStatement()
 
 void certificateOfDepositType::print()
 {
-	cout << fixed << showpoint << set precision(2);
+	cout << fixed << showpoint << setprecision(2);
 	cout << "Certificate of Deposit: " << getName() << "\t ACCT# "
 		  << getAccountNumber() << "\tBalance: $" << getBalance();
 }

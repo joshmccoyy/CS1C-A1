@@ -27,14 +27,14 @@ serviceChargeCheckingType::serviceChargeCheckingType(string n, int acctNumber, d
 	numberOfChecksWritten = 0;
 }
 
-double servicChargeCheckingType::getServiceChargeAccount()
+double serviceChargeCheckingType::getServiceChargeAccount()
 {
-	reeturn serviceChargeAccount;
+	return serviceChargeAccount;
 }
 
 void serviceChargeCheckingType::setServiceChargeAccount(double amount)
 {
-	serviceChargeAmount = amount;
+	serviceChargeAccount = amount;
 }
 
 double serviceChargeCheckingType::getServiceChargeChecks()
@@ -65,7 +65,7 @@ void serviceChargeCheckingType::postServiceCharge()
 void serviceChargeCheckingType::writeCheck(double amount)
 {
 	if (numberOfChecksWritten < MAXIMUM_NUM_OF_CHECKS)
-		balance = balance - amountl
+		balance = balance - amount;
 	else
 		balance = balance - amount - serviceChargeCheck;
 
@@ -80,6 +80,6 @@ void serviceChargeCheckingType::createMonthlyStatement()
 void serviceChargeCheckingType::print()
 {
 	cout << fixed << showpoint << setprecision(2);
-	cout << "Service Charge Checking: " << getName() << \t ACCT#: "
+	cout << "Service Charge Checking: " << getName() << "\t ACCT#: "
 		  << getAccountNumber() << "\tBalance: $" << getBalance();
 }

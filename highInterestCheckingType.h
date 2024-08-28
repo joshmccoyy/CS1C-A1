@@ -12,9 +12,9 @@ class highInterestCheckingType: public noServiceChargeCheckingType
 	public:
 		highInterestCheckingType(string n, int acctNumber, double bal);
 		highInterestCheckingType(string n, int acctNumber, double bal, double minBal, double intRate);
-		double getInterestRate;
+		double getInterestRate();
 		void setInterestRate(double intRate);
-		void postinterest();
+		void postInterest();
 		void createMonthlyStatement();
 		virtual void print();
 

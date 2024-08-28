@@ -3,7 +3,7 @@
 #include <iostream>
 #include <string>
 #include <iomanip>
-#include <bankAccount.h>
+#include "bankAccountType.h"
 
 using namespace std;
 
@@ -19,7 +19,7 @@ int bankAccountType::getAccountNumber()
 	return accountNumber;	
 }
 
-int bankAccountType::getBalance()
+double bankAccountType::getBalance()
 {
 	return balance;
 }

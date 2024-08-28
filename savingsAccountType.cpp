@@ -10,7 +10,7 @@ using namespace std;
 const double savingsAccountType::INTEREST_RATE = 0.03;
 
 savingsAccountType::savingsAccountType(string n, int acctNumber, double bal)
-					: bankAccount(n, acctNumber, bal)
+					: bankAccountType(n, acctNumber, bal)
 {
 	interestRate = INTEREST_RATE;
 }

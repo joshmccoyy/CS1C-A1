@@ -1,7 +1,7 @@
 //Implementation file 
 
 #include <iostream>
-#include < string>
+#include <string>
 #include <iomanip>
 #include "highInterestCheckingType.h"
 
@@ -18,8 +18,8 @@ highInterestCheckingType::highInterestCheckingType(string n, int acctNumber, dou
 
 }
 
-highInterestCheckingType::highInterestCheckingType(string n, int acctNumberdouble bal, double minBal, double intRate)
-								 : noservicechargechecking (n, acctNumber, bal, minBal, intRate)
+highInterestCheckingType::highInterestCheckingType(string n, int acctNumber, double bal, double minBal, double intRate)
+								 : noServiceChargeCheckingType(n, acctNumber, bal, minBal, intRate)
 {
 }
 
@@ -38,7 +38,7 @@ void highInterestCheckingType::postInterest()
 	balance = balance + balance * interestRate;
 }
 
-void highInterestCheckingType::createMonthlyStatement
+void highInterestCheckingType::createMonthlyStatement()
 {
 	postInterest();
 }
@@ -46,6 +46,6 @@ void highInterestCheckingType::createMonthlyStatement
 void highInterestCheckingType::print()
 {
 	cout << fixed << showpoint << setprecision(2);
-	cout << "Higher Interest Checking: " < getName() << "\t ACCT# "
-   	  << getAccountNumber() << "\tBalance: $" « getBalance();
+	cout << "Higher Interest Checking: " << getName() << "\t ACCT# "
+   	  << getAccountNumber() << "\tBalance: $" << getBalance();
 }

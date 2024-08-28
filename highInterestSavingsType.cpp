@@ -34,7 +34,7 @@ bool highInterestSavingsType::verifyMinimumBalance(double amount)
 
 void highInterestSavingsType::withdraw(double amount)
 {
-	if (verifiyMinimumBalance(amount))
+	if (verifyMinimumBalance(amount))
 		balance = balance - amount;
 }
 

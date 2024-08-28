@@ -31,3 +31,4 @@ class noServiceChargeCheckingType: public checkingAccountType
 };
 
 #endif
+

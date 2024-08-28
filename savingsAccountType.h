@@ -6,11 +6,11 @@
 
 using namespace std;
 
-class savingsAccountType: public bankAccountType
+class savingsAccountType : public bankAccountType
 {
+
 public:
 	savingsAccountType(string n, int acctNumber, double bal);
-
 	savingsAccountType(string n, int acctNumber, double bal, double intRate);
 
 	double getInterestRate();
@@ -26,3 +26,5 @@ private:
 	static const double INTEREST_RATE; // = 0.03
 
 };
+
+#endif

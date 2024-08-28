@@ -1,10 +1,10 @@
 #ifndef bankAccountType_H
-#define backAccountType_H
+#define bankAccountType_H
 
 #include <string>
 using namespace std;
 
-class bankAccount {
+class bankAccountType {
 
 public:
 	bankAccountType(string n = "", int acctNumber = 0, double bal = 0);
@@ -15,7 +15,7 @@ public:
 	virtual void withdraw(double amount);
 	void deposit(double amount);
 	virtual void createMonthlyStatement() = 0;
-	virtal void print();
+	virtual void print();
 
 protected:
 	int accountNumber;

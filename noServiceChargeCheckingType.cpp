@@ -1,8 +1,8 @@
 //Implementation file
 
-#include ‹iostream>
-#include «string>
-#include ‹iomanip>
+#include <iostream>
+#include <string>
+#include <iomanip>
 #include "noServiceChargeCheckingType.h"
 
 using namespace std;
@@ -13,7 +13,7 @@ const double noServiceChargeCheckingType::INTEREST_RATE = 0.02;
 noServiceChargeCheckingType::noServiceChargeCheckingType(string n, int acctNumber, double bal)
 									 : checkingAccountType(n, acctNumber, bal)
 {
-	minimumBalance = MIN BALANCE:
+	minimumBalance = MIN_BALANCE;
 	interestRate = INTEREST_RATE;
 }
 
@@ -24,7 +24,7 @@ noServiceChargeCheckingType::noServiceChargeCheckingType(string n, int acctNumbe
 	interestRate = intRate;
 }
 
-double noServiceChargeCheckingType::geMinimumBalance()
+double noServiceChargeCheckingType::getMinimumBalance()
 {
 	return minimumBalance;
 }
@@ -32,7 +32,7 @@ double noServiceChargeCheckingType::geMinimumBalance()
 void noServiceChargeCheckingType::setMinimumBalance(double minBalance)
 {
 	minimumBalance = minBalance;
-｝
+}
 
 bool noServiceChargeCheckingType::verifyMinimumBalance(double amount)
 {
@@ -58,6 +58,6 @@ void noServiceChargeCheckingType::createMonthlyStatement()
 void noServiceChargeCheckingType::print()
 {
 	cout << fixed << showpoint << setprecision(2);
-	cout < "No Service Charge Check. " <<  getName()« "\t ACCT# "
-	<< getAccountNumber() <<  "\tBalance: $" « getBalance();
+	cout << "No Service Charge Check. " << getName() << "\t ACCT# "
+	<< getAccountNumber() <<  "\tBalance: $" << getBalance();
 }
